@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Snake</string>
+    <string name="start">Start</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="exit">Exit</string>
+    <string name="score">Score:</string>
+    <string name="you_lose">You lose!</string>
+    <string name="left_arrow">◀</string>
+    <string name="right_arrow">▶</string>
+    <string name="down_arrow">▼</string>
+    <string name="up_arrow">▲</string>
+    <string name="you_win">You win!</string>
+    <string name="leader_empty">--/--</string>
+    <string name="clear">Clear</string>
+    <string name="enter_your_name">Enter your name:</string>
+    <string name="your_name">Your name</string>
+    <string name="submit">Submit</string>
+</resources>

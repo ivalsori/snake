@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyan"
+    tools:context=".EnterActivity">
+
+    <TextView android:id="@+id/text_enter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/edit_enter_name"
+        android:text="@string/enter_your_name"
+        android:textSize="30sp"
+        android:fontFamily="@font/super_boys"
+        android:textColor="@color/green"
+        android:shadowColor="@color/yellow"
+        android:shadowRadius="1"
+        android:shadowDx="8"
+        android:shadowDy="8"/>
+
+    <EditText android:id="@+id/edit_enter_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/text_enter_name"
+        android:layout_alignEnd="@id/text_enter_name"
+        android:layout_centerVertical="true"
+        android:inputType="text"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUWQXYZabcdefghijklmnopqrstuvwxyz1234567890_-"
+        android:gravity="center"
+        android:hint="@string/your_name"
+        android:textSize="30sp"
+        android:fontFamily="@font/super_boys"
+        android:textColor="@color/orange"
+        android:shadowColor="@color/black"
+        android:shadowRadius="6"
+        android:autofillHints="username" />
+
+    <Button android:id="@+id/btn_enter_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/text_enter_name"
+        android:layout_alignEnd="@id/text_enter_name"
+        android:layout_below="@id/edit_enter_name"
+        android:onClick="onClick"
+        android:text="@string/submit"
+        android:backgroundTint="@color/orange"
+        android:layout_marginVertical="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/catchy_melody"/>
+
+</RelativeLayout>

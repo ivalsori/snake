@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EndActivity"
+    android:background="@color/cyan"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/text_end_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/you_lose"
+        android:textColor="@color/green"
+        android:textSize="80sp"
+        android:fontFamily="@font/catchy_melody"
+        android:shadowColor="@color/yellow"
+        android:shadowDx="16"
+        android:shadowDy="16"
+        android:shadowRadius="1"/>
+    <TextView
+        android:id="@+id/text_end_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_end_result"
+        android:text="@string/score"
+        android:textSize="30sp"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/super_boys"
+        android:padding="20sp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="6"/>
+
+    <TextView
+        android:id="@+id/number_end_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/text_end_score"
+        android:layout_below="@id/text_end_result"
+        android:gravity="end"
+        android:textSize="30sp"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/super_boys"
+        android:padding="20sp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="6"/>
+
+    <Button android:id="@+id/btn_end_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_end_score"
+        android:layout_marginHorizontal="50dp"
+        android:onClick="onClick"
+        android:text="Next"
+        android:backgroundTint="@color/orange"
+        android:layout_marginVertical="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/catchy_melody"/>
+
+</RelativeLayout>
